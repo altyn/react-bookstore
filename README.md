@@ -1,8 +1,4 @@
-## React Template
-Tiny template for React Projects derived from [Create React App](https://github.com/facebook/create-react-app).
-
-###### Below this line are docs from Create [Create React App](https://github.com/facebook/create-react-app).
-
+## React Book Store
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
