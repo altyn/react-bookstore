@@ -8,7 +8,7 @@ import './app.css';
 const App = () => {
     return (
         <main role="main" className="container">
-            <ShopHeader numItems={5} total={210}/>
+            <ShopHeader numItems={5} total={201}/>
             <Switch>
                 <Route path='/' component={HomePage} exact/>
                 <Route path='/cart' component={CartPage} exact/>
