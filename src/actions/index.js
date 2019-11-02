@@ -1,14 +1,14 @@
 
+const booksRequested = () => {
+    return {
+        type: 'FETCH_BOOKS_REQUEST'
+    };
+};
+
 const booksLoaded = (newBooks) => {
     return {
         type: 'FETCH_BOOKS_SUCCESS',
         payload: newBooks
-    };
-};
-
-const booksRequested = () => {
-    return {
-        type: 'FETCH_BOOKS_REQUEST'
     };
 };
 

@@ -1,11 +1,10 @@
 
-
 const initialState = {
     books: [],
     loading: true,
     error: null,
     cartItems: [],
-    orderTotal: 385
+    orderTotal: 220
 };
 
 const reducer = (state = initialState, action) => {
@@ -36,12 +35,12 @@ const reducer = (state = initialState, action) => {
                 error: action.payload
             };
 
-        case 'BOOK_ADDED_TO_CARD':
+        case 'BOOK_ADDED_TO_CART':
             const bookId = action.payload;
             const book = state.books.find((book) => book.id === bookId);
             const newItem = {
                 id: book.id,
-                name: book.title,
+                title: book.title,
                 count: 1,
                 total: book.price
             };
@@ -55,8 +54,8 @@ const reducer = (state = initialState, action) => {
             };
 
         default:
-            return state
-        
+            return state;
+
     }
 };
 
